@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ramps",
+    "name": "Accessibility Ramps",
+    "cost_inr": 220000,
+    "benefit_score": 32,
+    "is_accessibility": true,
+    "depends_on": []
+  },
+  {
+    "id": "water",
+    "name": "Water Pipeline Repair",
+    "cost_inr": 200000,
+    "benefit_score": 30,
+    "is_accessibility": false,
+    "depends_on": []
+  },
+  {
+    "id": "lab",
+    "name": "Teaching Lab Modernization",
+    "cost_inr": 260000,
+    "benefit_score": 57,
+    "is_accessibility": false,
+    "depends_on": []
+  },
+  {
+    "id": "led",
+    "name": "Library LED Retrofit",
+    "cost_inr": 110000,
+    "benefit_score": 20,
+    "is_accessibility": false,
+    "depends_on": []
+  },
+  {
+    "id": "substation",
+    "name": "Electrical Substation Upgrade",
+    "cost_inr": 150000,
+    "benefit_score": 18,
+    "is_accessibility": false,
+    "depends_on": []
+  },
+  {
+    "id": "wifi",
+    "name": "Campus Wi-Fi Expansion",
+    "cost_inr": 170000,
+    "benefit_score": 25,
+    "is_accessibility": false,
+    "depends_on": [
+      "substation"
+    ]
+  },
+  {
+    "id": "desks",
+    "name": "Student Furniture",
+    "cost_inr": 120000,
+    "benefit_score": 15,
+    "is_accessibility": false,
+    "depends_on": []
+  }
+]
+
