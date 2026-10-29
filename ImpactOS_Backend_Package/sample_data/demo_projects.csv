@@ -1,0 +1,7 @@
+project_id,project_name,sector,location,cost_lakh,expected_beneficiaries,unmet_need_pct,vulnerable_beneficiary_pct,readiness_pct,depends_on_project,evidence_indicator,evidence_source_url,evidence_year,data_status
+P001,Repair school toilets,Education,DEMO-DISTRICT,18,850,75,45,90,,Share of functional toilets,,,SYNTHETIC
+P002,Extend community water service,Water,DEMO-DISTRICT,32,2200,85,65,65,,Household tap-water coverage,,,SYNTHETIC
+P003,Upgrade primary clinic,Health,DEMO-DISTRICT,42,1800,65,80,70,,Healthcare service gap,,,SYNTHETIC
+P004,Repair local roads,Transport,DEMO-DISTRICT,35,3700,55,40,85,,Share of roads in poor condition,,,SYNTHETIC
+P005,Install school accessibility ramps,Education,DEMO-DISTRICT,12,400,80,75,95,,Schools without accessible ramps,,,SYNTHETIC
+P006,Improve waste collection route,Sanitation,DEMO-DISTRICT,25,1500,70,55,80,,Households without regular collection,,,SYNTHETIC
