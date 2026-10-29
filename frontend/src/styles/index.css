@@ -1,0 +1,120 @@
+@import '@fontsource/cormorant-garamond/400.css';
+@import '@fontsource/cormorant-garamond/400-italic.css';
+@import '@fontsource/cormorant-garamond/500.css';
+@import '@fontsource/cormorant-garamond/600.css';
+@import '@fontsource/cormorant-garamond/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-obsidian: #1F1D20;
+    --color-burgundy: #4A2427;
+    --color-terracotta: #803E2F;
+    --color-taupe: #A79986;
+    --color-charcoal: #38302D;
+    --color-stone-charcoal: #3E3D38;
+    --color-page: #F3EEE6;
+    --color-surface: #FBF8F3;
+    --color-surface-alt: #E9E2D6;
+    --color-secondary-text: #6B5E55;
+    --color-input-border: #857762;
+    --color-hairline: #D6CCBC;
+    --color-terracotta-hover: #6B3326;
+    --color-success: #3F6B4A;
+    --color-warning: #855710;
+    --color-error: #A32D2D;
+  }
+
+  html, body, #root {
+    background-color: #F3EEE6;
+  }
+
+  body {
+    color: var(--color-charcoal);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+  }
+
+  ::selection {
+    background: var(--color-burgundy);
+    color: var(--color-page);
+  }
+
+  input, textarea, select {
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1, h2, h3, h4, .font-serif-heading {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .border-hairline {
+    border-color: #D6CCBC;
+  }
+
+  .divide-hairline > * + * {
+    border-color: #D6CCBC;
+  }
+
+  .text-editorial-eyebrow {
+    font-size: 0.6875rem; /* 11px */
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3EEE6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6CCBC;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A79986;
+}
+
+/* Focus styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid #803E2F;
+  outline-offset: 2px;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
